@@ -436,6 +436,88 @@ body {
 
 
 
+
+.caixa-ofertas {
+    width: 100%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.ofertas-box {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 2px solid #ffffff85;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+    padding: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+
+.ofertas-box summary {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 18px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+}
+
+.ofertas-box summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.icon-oferta {
+    width: 28px;
+    height: 28px;
+}
+
+
+.form-ofertas {
+    padding: 20px 24px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.form-ofertas input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #cfcfcf;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-ofertas input:focus {
+    border-color: #a657f3;
+    box-shadow: 0 0 8px #a657f3;
+}
+
+
+.btn-ofertas {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    background: linear-gradient(135deg, #552b7e, #6a1b9a);
+    color: white;
+}
+
+.btn-ofertas:hover {
+    transform: scale(1.05);
+}
+
+
+
 /*carros*/
 :root {
     --roxo: #6a1b9a;
