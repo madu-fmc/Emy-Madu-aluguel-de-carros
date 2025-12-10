@@ -35,6 +35,7 @@ body {
   background-color:rgb(255, 255, 255);
   margin: 0;
   padding: 0;
+  padding-bottom: calc(var(--footer-altura) + 30px);
 }
 
 /*animaçoes*/
@@ -882,6 +883,9 @@ color: var(--roxo);
   gap: 40px;
   padding: 70px 20px;
   background-color: #fff;
+  width: min(1100px, 92vw);
+  margin: clamp(40px, 8vh, 110px) auto;
+  justify-content: center;
 }
 
 
@@ -1045,15 +1049,25 @@ color: var(--roxo);
 
 
 /*login*/
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - var(--footer-altura) - 80px);
+    padding: clamp(70px, 12vh, 140px) 16px 40px;
+}
+
 .area-login {
     background-color: var(--cinza-claro);
     border-radius: var(--raio);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.877);
-    width: 90%;
-    max-width: 450px;
-    margin: 60px auto; 
-    padding: 50px 50px; 
-    text-align: center; 
+    width: min(520px, 92vw);
+    margin: 0 auto; 
+    padding: 50px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -1127,15 +1141,27 @@ color: var(--roxo);
     
 }
 
+.area-login .bot {
+    position: static;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: var(--roxo);
+    font-weight: 600;
+}
+
 /*footer*/
 .main-footer {
     background-color: var(--cor-secundaria);
     color: white;
     padding: 30px 10px;
-    margin-top: 40px;
     font-size: 0.9em;
     width: 100%;
-  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    min-height: var(--footer-altura);
 }
 
 .footer-content {
@@ -1161,8 +1187,8 @@ color: var(--roxo);
 /*botao wpp*/
  .whatsapp-float {
     position: fixed;
-    margin-top: 90px; 
-    right: 90px; 
+    right: 24px; 
+    bottom: calc(var(--footer-altura) + 64px);
     width: 65px;
     height: 65px;
     border-radius: 50%;
@@ -1194,8 +1220,8 @@ color: var(--roxo);
     .whatsapp-float {
         width: 55px;
         height: 55px;
-        bottom: 20px;
-        right: 20px;
+        bottom: calc(var(--footer-altura) + 48px);
+        right: 16px;
         line-height: 55px;
         font-size: 26px;
     }
@@ -1207,10 +1233,8 @@ color: var(--roxo);
     50% { transform: translateY(-6px); }
 }
 
-
-
 body{
   background-color:rgb(255, 255, 255);
+  padding-bottom: calc(var(--footer-altura) + 30px);
+  min-height: 100vh;
 }
-
-
